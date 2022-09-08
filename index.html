@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="shortcut icon" href="images/rocket.ico">
+    <title>Formulário de Contato</title>
+	<link rel="stylesheet" href="estilos\estilo_1.css">
+</head>
+
+<body>
+	<header>
+		<h1>Fale Comigo!!!</h1>
+		<div class="figura" id="satelite">
+			<img src="images\orbita.png" alt="">
+		</div>
+		<div class="figura" id="planeta">
+			<img src="images\orbita_pl.png" alt="PLANETA">
+		</div>
+	</header>
+
+<main>
+	<form action="" method="get">
+		<p class="para1">
+			<label for="inome">Nome</label>
+			<input type="text" name="nome" id="inome" maxlength="30" placeholder="Nome Completo" autocomplete="name" required>
+		</p>
+		<p class="para1">
+			<label for="imail">E-Mail</label>
+			<input type="email" name="email" id="iemail"  autocomplete="email" placeholder="Seu E-mail" required>
+		</p>
+		<p class="para1">
+			<label for="itel">Telefone</label>
+			<input type="tel" name="tel" id="itel" pattern="[0-9]{4}-[0-9]{4}" placeholder="XXXX-XXXX" required>
+		</p>
+		<p class="para2">
+			<button type="button" onclick="alert('E-mail enviado!!!')">LANÇAR</button>
+			<button type="button">VOLTAR</button>
+		</p>
+	</form>
+</main>
+
+<footer>
+<picture class="figura" id="plataforma">
+	<source srcset="images\plataforma_100.png" media="(max-width: 768px)">
+	<img src="images\plataforma.png" alt="plataforma de lançamento">
+</picture>
+<picture class="figura" id="foguete">
+	<source srcset="images\foguete_100.png" media="(max-width: 768px)">
+	<img src="images\foguete.png" alt="foguete">
+</picture>
+	<p> Criado por <a href='https://github.com/cjdesidera/' target='_blanck'>Cesar Desiderá</a>.</p> 
+	<p>Material de Portifólio, sem fins comerciais.</p>
+</footer>
+</body>
+
+</html>
